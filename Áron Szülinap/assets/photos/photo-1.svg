@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Emlékkép placeholder 1">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1a22"/><stop offset="1" stop-color="#08080b"/></linearGradient>
+    <radialGradient id="light" cx="50%" cy="38%" r="62%"><stop offset="0" stop-color="#5d556b" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#light)"/>
+  <circle cx="600" cy="360" r="150" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="600" cy="360" r="230" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+  <text x="600" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="86" fill="#ffffff" fill-opacity=".72">01</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="8" fill="#ffffff" fill-opacity=".45">IDE TEGYED A KÉPET</text>
+  <text x="600" y="460" text-anchor="middle" font-family="monospace" font-size="17" letter-spacing="3" fill="#ffffff" fill-opacity=".25">CSERÉLD KI EZT A FÁJLT A SAJÁT FOTÓDRA</text>
+  <rect x="18" y="18" width="1164" height="764" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+</svg>

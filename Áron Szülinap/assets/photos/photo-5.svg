@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-label="Emlékkép placeholder 5">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24202a"/><stop offset="1" stop-color="#09080d"/></linearGradient>
+    <radialGradient id="light" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#7a6274" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1000" height="760" fill="url(#bg)"/>
+  <rect width="1000" height="760" fill="url(#light)"/>
+  <text x="500" y="355" text-anchor="middle" font-family="Georgia, serif" font-size="88" fill="#ffffff" fill-opacity=".72">05</text>
+  <text x="500" y="415" text-anchor="middle" font-family="Georgia, serif" font-size="26" letter-spacing="7" fill="#ffffff" fill-opacity=".45">KÉP HELYE</text>
+  <text x="500" y="460" text-anchor="middle" font-family="monospace" font-size="15" letter-spacing="2" fill="#ffffff" fill-opacity=".24">assets/photos/photo-5.svg</text>
+  <rect x="16" y="16" width="968" height="728" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+</svg>

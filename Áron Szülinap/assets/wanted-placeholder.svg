@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Körözött plakát – ide tegyél egy saját képet">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe4c8"/><stop offset="1" stop-color="#cdbb95"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.12"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="800" height="560" fill="url(#paper)"/>
+  <rect width="800" height="560" filter="url(#grain)" opacity=".45"/>
+  <rect x="24" y="24" width="752" height="512" fill="none" stroke="#3a2f20" stroke-width="4"/>
+  <rect x="34" y="34" width="732" height="492" fill="none" stroke="#3a2f20" stroke-width="1.5"/>
+  <text x="400" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="52" letter-spacing="10" fill="#2c2216">WANTED</text>
+  <text x="400" y="126" text-anchor="middle" font-family="monospace" font-size="16" letter-spacing="4" fill="#5b4a31">// SUKÁR DADDY //</text>
+  <rect x="250" y="152" width="300" height="260" fill="#b6a47e" stroke="#3a2f20" stroke-width="3"/>
+  <text x="400" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#5b4a31">IDE TEGYÉL</text>
+  <text x="400" y="306" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#5b4a31">EGY KÉPET</text>
+  <text x="400" y="350" text-anchor="middle" font-family="monospace" font-size="13" fill="#6b5940">(vagy maradjon ez)</text>
+  <text x="400" y="452" text-anchor="middle" font-family="Georgia, serif" font-size="25" fill="#2c2216">Bűne: túl sok mem, túl kevés alvás</text>
+  <text x="400" y="492" text-anchor="middle" font-family="monospace" font-size="14" letter-spacing="2" fill="#5b4a31">REWARD: EGY SZÜLETÉSNAPI QUEST</text>
+</svg>

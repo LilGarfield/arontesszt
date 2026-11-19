@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08060f">
+  <meta name="description" content="Daddy's Birthday Quest — egy kis rejtély Áronnak.">
+  <title>Daddy's Birthday Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ============================ LOADER ============================ -->
+  <section id="loader" class="screen loader" aria-label="Betöltés">
+    <div class="loader__inner">
+      <div id="loader-lines" class="loader__lines" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================= GAME ============================= -->
+  <main id="game" class="screen game is-hidden" aria-label="Daddy's Birthday Quest">
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="game__header">
+      <p id="header-eyebrow" class="eyebrow"></p>
+      <h1 id="header-title"></h1>
+      <p id="header-subtitle" class="subtitle"></p>
+      <div class="progress" aria-label="Kinyitott ajándékok">
+        <span class="progress__label">UNLOCKED</span>
+        <span id="progress-pips" class="progress__pips"></span>
+        <span id="progress-count" class="progress__count">0 / 5</span>
+      </div>
+    </header>
+
+    <div id="gift-grid" class="gift-grid" aria-label="Öt rejtélyes ajándék"></div>
+
+    <footer class="game__footer">
+      <p id="footer-hint" class="footer__hint"></p>
+      <div class="chip-row">
+        <button id="sound-toggle" class="chip" type="button" aria-pressed="true">HANG: BE</button>
+        <button id="reset-btn" class="chip" type="button">ÚJRAJÁTSZÁS</button>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ========================== CHALLENGE ========================== -->
+  <div id="modal-backdrop" class="backdrop is-hidden">
+    <section class="window modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="window__bar">
+        <span id="modal-title">AJÁNDÉK</span>
+        <button id="modal-close" class="window__x" type="button" aria-label="Bezárás">×</button>
+      </div>
+      <div class="window__body">
+        <p id="modal-clue" class="clue"></p>
+        <p id="modal-instruction" class="instruction"></p>
+        <form id="answer-form" novalidate>
+          <label class="sr-only" for="answer-input">A válaszod</label>
+          <input id="answer-input" class="answer-input" type="text" autocomplete="off"
+                 autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go">
+          <p id="answer-feedback" class="feedback" aria-live="polite"></p>
+          <div class="answer-actions">
+            <button class="btn btn--primary" type="submit">KINYITOM ▸</button>
+            <button id="hint-btn" class="btn btn--ghost" type="button">TIPP</button>
+          </div>
+        </form>
+        <p id="modal-hint" class="hint is-hidden"></p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================== REVEAL ============================= -->
+  <div id="reveal" class="backdrop is-hidden">
+    <section class="window reveal" role="dialog" aria-modal="true" aria-labelledby="reveal-title">
+      <div class="window__bar">
+        <span id="reveal-kicker">// SUCCESS //</span>
+        <span class="window__bar-deco">★ ★ ★</span>
+      </div>
+      <div class="window__body reveal__body">
+        <p id="reveal-message" class="reveal__message"></p>
+        <h2 id="reveal-title" class="reveal__title"></h2>
+        <div id="reveal-content" class="reveal__content"></div>
+        <button id="reveal-close" class="btn btn--primary btn--wide" type="button">VISSZA A JÁTÉKHOZ</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========================== FINALE =========================== -->
+  <section id="finale" class="finale is-hidden" aria-label="A történet vége">
+    <div id="message-stage" class="message-stage">
+      <p id="finale-message" class="finale-message"></p>
+    </div>
+    <div id="credits" class="credits is-hidden" aria-live="off"></div>
+    <div id="finale-end" class="finale-end is-hidden">
+      <p class="finale-end__text">Boldog születésnapot, Áron.</p>
+      <button id="finale-restart" class="finale-end__button" type="button">ÚJRA ELEJÉTŐL</button>
+    </div>
+    <button id="skip-btn" class="skip-btn is-hidden" type="button">ÁTUGRÁS ▸</button>
+  </section>
+
+  <audio id="credits-music" preload="auto"></audio>
+
+  <div id="toast" class="toast is-hidden" role="status" aria-live="polite"></div>
+  <div id="live-region" class="sr-only" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
